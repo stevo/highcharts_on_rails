@@ -1,1 +1,4 @@
-# highcharts_on_rails
+highcharts_on_rails
+===================
+
+Highcharts on steroids

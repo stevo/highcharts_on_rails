@@ -1,19 +1,23 @@
-# encoding: utf-8
+$:.push File.expand_path("../lib", __FILE__)
 
-$:.unshift File.expand_path('../lib', __FILE__)
-require 'highcharts_on_rails/version'
+# Maintain your gem's version:
+require "highcharts_on_rails/version"
 
+# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name          = "highcharts_on_rails"
-  s.version       = HighchartsOnRails::VERSION
-  s.authors       = ["Stevo"]
-  s.email         = ["b.kosmowski@selleo.com"]
-  s.homepage      = "https://github.com/stevo/highcharts_on_rails"
-  s.summary       = "TODO: summary"
-  s.description   = "TODO: description"
+  s.name        = "highcharts_on_rails"
+  s.version     = HighchartsOnRails::VERSION
+  s.authors     = ["stevo"]
+  s.email       = ["b.kosmowski@selleo.com"]
+  s.homepage    = "TODO"
+  s.summary     = "TODO: Summary of HighchartsOnRails."
+  s.description = "TODO: Description of HighchartsOnRails."
 
-  s.files         = `git ls-files app lib`.split("\n")
-  s.platform      = Gem::Platform::RUBY
-  s.require_paths = ['lib']
-  s.rubyforge_project = '[none]'
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "rails", "~> 3.2.12"
+  # s.add_dependency "jquery-rails"
+
+  s.add_development_dependency "sqlite3"
 end

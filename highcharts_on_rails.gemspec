@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = HighchartsOnRails::VERSION
   s.authors     = ["stevo"]
   s.email       = ["b.kosmowski@selleo.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of HighchartsOnRails."
-  s.description = "TODO: Description of HighchartsOnRails."
+  s.homepage    = "https://github.com/stevo/highcharts_on_rails"
+  s.summary     = "Highcharts on steroids"
+  s.description = "Create highcharts in rails with ease!"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

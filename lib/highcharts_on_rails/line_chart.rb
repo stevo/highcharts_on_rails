@@ -26,7 +26,7 @@ class HighchartsOnRails::LineChart < HighchartsOnRails::BaseChart
 
   def add_series(label, data, options={})
     @_series ||= []
-    @_series += [{name: label, data: data}]
+    @_series += [{name: label, data: data}.merge(options)]
   end
 
   def color(color)

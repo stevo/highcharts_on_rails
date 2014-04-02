@@ -6,7 +6,6 @@ class HighchartsOnRails::PieChart < HighchartsOnRails::BaseChart
                        fontWeight: 'bold'
                    },
                    text: "",
-                   floating: true
                },
                xAxis: {
                    categories: nil

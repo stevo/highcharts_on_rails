@@ -77,6 +77,9 @@ class HighchartsOnRails::BaseChart
     add_json({xAxis: {categories: categories}})
   end
 
+  def series
+    @_series
+  end
 
   private
 
